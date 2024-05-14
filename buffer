@@ -1,0 +1,29 @@
+AM8
+
+[stepper_x]
+rotation_distance: 32
+position_endstop: -30
+position_max: 300
+position_min: -30
+
+[stepper_y]
+rotation_distance: 32
+position_endstop: -8
+position_max: 300
+position_min: -8
+
+[stepper_z]
+homing_speed: 20
+
+[display]
+lcd_type: st7920
+cs_pin: PA4
+sclk_pin: PA1
+sid_pin: PA3
+encoder_pins: ^PD2, ^PD3
+click_pin: ^!PC0
+===========================
+
+[bltouch]
+sensor_pin: ^P1.24 # white wire
+control_pin: P1.26 # yellow wire
